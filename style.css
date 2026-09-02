@@ -1,0 +1,79 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+}
+
+
+.card {
+  background-color: #1e1e1e;
+
+  padding: 30px 45px;
+
+  border-radius: 18px;
+
+  text-align: center;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+  margin-top: 0;
+}
+
+
+/* AVATAR PIXEL ART */
+
+#avatar {
+  width: 256px;
+  height: 256px;
+
+  image-rendering: pixelated;
+
+  cursor: pointer;
+}
+
+
+/* SALTITO DEL PINGÜINO */
+
+#avatar.jump {
+  animation: saltito 0.8s ease;
+}
+
+
+@keyframes saltito {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  70% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+#mensaje {
+  margin-top: 12px;
+
+  font-size: 14px;
+
+  color: #f5a9c5;
+}
